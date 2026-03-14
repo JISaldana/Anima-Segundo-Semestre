@@ -1,0 +1,12 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+function Footer() {
+    return (
+        <footer className="bg-dark text-light text-center py-3">
+        <p className="text-secondary">Sitio web desarrollado por <a href="https://github.com/JISaldana" target="_blank" rel="noopener noreferrer" className="text-info">Juan Saldaña</a></p>
+        </footer>
+    );
+}
+
+export default Footer;
