@@ -9,19 +9,23 @@ import PrincipalContent from './components/layout/PrincipalContent.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className="container w-100">
+    <div className="container-fluid p-0">
+
       <div className="row">
         <NavbarComponent />
       </div>
-      <div className="row g-0">
+      <div className="row">
       <div className="col-md-2 d-none d-md-block">
        <SidebarComponent />
       </div>
       <div className="col-12 col-md-10">
         <PrincipalContent />
+      </div>
+      </div>
+      <div className="row">
         <FooterComponent />
       </div>
-    </div>
+
   </div>
 
     
