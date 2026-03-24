@@ -9,7 +9,7 @@ function ProfileCard({ name, image, text }) {
         alt="User profile" 
       />
       <h2 className="card-title mb-2">{name}</h2>
-      <p className="card-text text-white mb-5">{text}</p>
+      <p className="card-text text-white mb-5 ms-3 me-3">{text}</p>
     </div>
   );
 }

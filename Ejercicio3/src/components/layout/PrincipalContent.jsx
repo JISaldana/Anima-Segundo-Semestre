@@ -19,6 +19,7 @@ function PrincipalContent() {
         <div>
           <ReactMarkdown>{content}</ReactMarkdown>
         </div>
+        <div><br /></div>
       </div>
     </div>
   );

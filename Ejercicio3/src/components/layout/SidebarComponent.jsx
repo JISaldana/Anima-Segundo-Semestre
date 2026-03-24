@@ -5,7 +5,7 @@ import profilePic from '../../assets/profilePic.jpg';
 
 function SidebarComponent() {
   return (
-    <div className="bg-dark text-white">
+    <div className="bg-dark text-white py-4 h-100">
       <ProfileCard 
         name="Juan Saldaña"
         image={profilePic}

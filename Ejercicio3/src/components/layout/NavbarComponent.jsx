@@ -5,11 +5,11 @@ function NavbarComponent() {
   return (
     <nav className="navbar navbar-dark bg-dark" style={{ position: 'sticky', top: 0, zIndex: 1030 }}>
       <div className="container-fluid d-flex justify-content-between align-items-center">
-        <a className="navbar-brand text-white" href="#">
+        <a className="navbar-brand text-white ms-2" href="#">
           <strong>🔵 Navbar Test</strong>
         </a>
         
-        <div className="dropdown">
+        <div className="dropdown me-3">
           <button
             className="btn btn-dark dropdown-toggle"
             type="button"
