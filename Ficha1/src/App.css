@@ -1,0 +1,41 @@
+.App {
+  background: #0f0f0f;
+  min-height: 100vh;
+  color: white;
+}
+
+.App h1 {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border: 3px solid white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.card-title {
+  color: #333;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #666;
+}
+
+.btn-primary {
+  background-color: #2a5298;
+  border-color: #2a5298;
+}
+
+.btn-primary:hover {
+  background-color: #1e3c72;
+  border-color: #1e3c72;
+}
