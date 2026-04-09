@@ -16,12 +16,12 @@ function PrincipalContent() {
   return (
     <div>
       <div>
-        <div>
+       
           <ReactMarkdown>{content}</ReactMarkdown>
         </div>
         <div><br /></div>
       </div>
-    </div>
+    
   );
 }
 
