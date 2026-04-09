@@ -25,7 +25,7 @@ function SidebarComponent() {
       <div className="clock text-center">
         <p className="small text-secondary">
           <hr />
-          {time.getDate()}/{time.getMonth() + 1}/{time.getFullYear()}
+          {time.getDate()}/{time.getMonth()+1}/{time.getFullYear()}
           <br />
           {time.toLocaleTimeString()}
         </p>
