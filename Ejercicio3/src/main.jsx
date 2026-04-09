@@ -15,10 +15,10 @@ createRoot(document.getElementById('root')).render(
         <NavbarComponent />
       </div>
       <div className="row">
-      <div className="col-md-2 d-none d-md-block">
+      <div className="col-md-2 d-none d-md-block bg-dark">
        <SidebarComponent />
       </div>
-      <div className="col-12 col-md-10">
+      <div className="col-12 col-md-10 bg-dark text-white">
         <PrincipalContent />
       </div>
       </div>
