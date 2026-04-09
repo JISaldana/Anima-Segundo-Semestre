@@ -1,9 +1,20 @@
+import { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import ProfileCard from './ProfileCard';
 import profilePic from '../../assets/profilePic.jpg';
 
 function SidebarComponent() {
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <div className="bg-dark text-white py-4 h-100">
       <ProfileCard 
@@ -13,7 +24,8 @@ function SidebarComponent() {
       />
       <div className="clock text-center">
         <p className="small text-secondary">
-          {new Date().toLocaleDateString()} - {new Date().toLocaleTimeString()}
+          <br />
+          {time.toLocaleTimeString()}
         </p>
       </div>
     </div>
