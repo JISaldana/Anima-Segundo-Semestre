@@ -23,8 +23,8 @@ function SidebarComponent() {
         text="Do the impossible see the invisible."
       />
       <div className="clock text-center">
+        <hr className="text-secondary" />
         <p className="small text-secondary">
-          <hr />
           {time.getDate()}/{time.getMonth()+1}/{time.getFullYear()}
           <br />
           {time.toLocaleTimeString()}
