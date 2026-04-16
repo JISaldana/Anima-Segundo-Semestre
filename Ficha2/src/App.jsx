@@ -1,13 +1,21 @@
-import { useState } from 'react'
 import Listas from './components/Listas'
+import Card from './components/Card'
+import cards from './data/cardData'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div>
       <Listas />
+      <div className="container py-4">
+        <div className="row row-cols-1 row-cols-md-3 g-3">
+          {cards.map((card, index) => (
+            <div className="col" key={index}>
+              <Card photo={card.photo} name={card.name} rol={card.rol} />
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
