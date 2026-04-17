@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import ProfileCard from './ProfileCard';
+import ProfileCard from '../ui/ProfileCard';
 import profilePic from '../../assets/profilePic.jpg';
 
 function SidebarComponent() {
