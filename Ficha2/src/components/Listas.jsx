@@ -12,7 +12,7 @@ const Listas = () => {
         </div>
         <div className="card-body">
           <p className="card-text text-muted mb-3">
-            Algunos de mis gustos en anime, videojuegos y música.
+            Algunos de mis gustos en anime, videojuegos, comidas, musica, etc.
           </p>
           <ul className="list-group list-group-flush">
             {cosasQueMeGustan.map((cosa, index) => (
