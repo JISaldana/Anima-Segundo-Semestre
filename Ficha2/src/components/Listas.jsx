@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
 import listdata from '../data/listCosasQueMeGustan.js';
 
 const Listas = () => {
-  const [isVisible, setIsVisible] = useState(true);
   const cosasQueMeGustan = listdata;
 
   return (
