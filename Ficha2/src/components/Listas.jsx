@@ -24,10 +24,11 @@ const Listas = () => {
           </button>
           {isVisible && (
             <ul className="list-group list-group-flush">
-              {cosasQueMeGustan.map((cosa, index) => (
-                <li key={index} className="list-group-item">
-                  {cosa}
+              {cosasQueMeGustan.map((thing) => (
+                <li className="list-group-item" key={thing.id}>
+                  <strong>{thing.cosa}:</strong> {thing.nombre}
                 </li>
+
               ))}
             </ul>
           )}

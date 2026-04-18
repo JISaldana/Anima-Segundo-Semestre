@@ -9,8 +9,8 @@ function App() {
       <Listas />
       <div className="container py-4">
         <div className="row row-cols-1 row-cols-md-3 g-3">
-          {cards.map((card, index) => (
-            <div className="col" key={index}>
+          {cards.map((card) => (
+            <div className="col" key={card.id}>
               <Card photo={card.photo} name={card.name} rol={card.rol} />
             </div>
           ))}
