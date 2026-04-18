@@ -1,6 +1,7 @@
 import Listas from './components/Listas'
 import Card from './components/Card'
 import cards from './data/cardData'
+import ListaConBoton from './components/ListaConBoton'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           ))}
         </div>
       </div>
+      <ListaConBoton />
     </div>
   )
 }
