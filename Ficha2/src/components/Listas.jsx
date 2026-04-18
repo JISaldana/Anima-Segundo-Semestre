@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import listdata from '../data/listData.js';
+import listdata from '../data/listCosasQueMeGustan.js';
 
 const Listas = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -15,23 +15,14 @@ const Listas = () => {
           <p className="card-text text-muted mb-3">
             Algunos de mis gustos en anime, videojuegos, comidas, musica, etc.
           </p>
-          <button
-            type="button"
-            className={`btn mb-3 ${isVisible ? 'btn-danger' : 'btn-success'}`}
-            onClick={() => setIsVisible((prev) => !prev)}
-          >
-            {isVisible ? 'Ocultar lista' : 'Mostrar lista'}
-          </button>
-          {isVisible && (
-            <ul className="list-group list-group-flush">
-              {cosasQueMeGustan.map((thing) => (
-                <li className="list-group-item" key={thing.id}>
-                  <strong>{thing.cosa}:</strong> {thing.nombre}
-                </li>
+          <ul className="list-group list-group-flush">
+            {cosasQueMeGustan.map((thing) => (
+              <li className="list-group-item" key={thing.id}>
+                <strong>{thing.cosa}:</strong> {thing.nombre}
+              </li>
 
-              ))}
-            </ul>
-          )}
+            ))}
+          </ul>
         </div>
         <div className="card-footer text-muted small">
           Juan Saldaña
