@@ -31,6 +31,7 @@ function Formulario1() {
                     onChange={(e) => setEdad(e.target.value)}
                 />
             </div>
+            <br />
             <button type="submit" className="btn btn-primary">Enviar</button>
         </form>
     );

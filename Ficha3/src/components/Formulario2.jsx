@@ -34,6 +34,7 @@ function Formulario2() {
                         onChange={(e) => setDescripcion(e.target.value)}
                     />
                 </div>  
+                <br />
                 <button type="submit" className="btn btn-primary">Enviar</button>
             </form>
             {mostrarTarjeta && <Tarjeta titulo={titulo} descripcion={descripcion} />}
