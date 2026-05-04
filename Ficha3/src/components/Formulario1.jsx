@@ -12,24 +12,26 @@ function Formulario1() {
     return (
         <form onSubmit={handleSubmit}>
             <div>
-                <label htmlFor="nombre">Nombre:</label>
+                <label className="form-label" htmlFor="nombre">Nombre:</label>
                 <input
                     type="text"
                     id="nombre"
+                    className="form-control"
                     value={nombre}
                     onChange={(e) => setNombre(e.target.value)}
                 />
             </div>
             <div>
-                <label htmlFor="edad">Edad:</label>
+                <label className="form-label" htmlFor="edad">Edad:</label>
                 <input
                     type="number"
                     id="edad"
+                    className="form-control"
                     value={edad}
                     onChange={(e) => setEdad(e.target.value)}
                 />
             </div>
-            <button type="submit">Enviar</button>
+            <button type="submit" className="btn btn-primary">Enviar</button>
         </form>
     );
 }

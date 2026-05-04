@@ -15,24 +15,26 @@ function Formulario2() {
         <div>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label htmlFor="titulo">Título:</label>
+                    <label className="form-label" htmlFor="titulo">Título:</label>
                     <input
                         type="text"
                         id="titulo"
+                        className="form-control"
                         value={titulo}
                         onChange={(e) => setTitulo(e.target.value)}
                     />
                 </div>  
                 <div>
-                    <label htmlFor="descripcion">Descripción:</label>
+                    <label className="form-label" htmlFor="descripcion">Descripción:</label>
                     <input
                         type="text"
                         id="descripcion"
+                        className="form-control"
                         value={descripcion}
                         onChange={(e) => setDescripcion(e.target.value)}
                     />
                 </div>  
-                <button type="submit">Enviar</button>
+                <button type="submit" className="btn btn-primary">Enviar</button>
             </form>
             {mostrarTarjeta && <Tarjeta titulo={titulo} descripcion={descripcion} />}
         </div>
